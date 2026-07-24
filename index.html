@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <img class="header-logo" src="logo.png" alt="Логотип">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a class="header-link" href="#">Про нас</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#">Інгредієнти</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <img class="hero-img" src="hero-img.png" alt="Піца на домі">
+                <div class="hero-copy">
+                    <h1 class="hero-title">Приготуємо смачну піцу!</h1>
+                    <p class="hero-text">Тонко, соковито, м’яко, тепло, ароматно — це все про неї, про піцу! Ідеальне поєднання продуктів, яке дарує смак літа кожного разу, як ти відкриваєш коробку.</p>
+                    <p class="hero-text">Подаруй насолоду внутрішньому ласунчику.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dough">
+            <div class="container dough-container">
+                <div class="dough-wrap">
+                    <h2 class="dough-title">Тобі знадобляться такі інгредієнти для приготування тіста:</h2>
+                    <ul class="dough-list">
+                        <li class="dough-item">Мука — 300 г</li>
+                        <li class="dough-item">Вода — 220 мл</li>
+                        <li class="dough-item">Сіль — одна чайна ложка</li>
+                        <li class="dough-item">Сухі дріжджі — 6 г</li>
+                        <li class="dough-item">Оливкова олія — 2 столові ложки</li>
+                    </ul>
+                    <p class="dough-text">Залий теплою водою дріжджі, посоли суміш, ретельно перемішай. До розчину дріжджів додай оливкову олію та муку. Замісі тісто. Постав тісто в тепле місце на півгодини, аби воно як слід підійшло.</p>
+                </div>
+                <img class="dough-img" src="dough.png" alt="Інгредієнти для тіста">
+            </div>
+        </section>
+
+        <section class="filling">
+            <div class="container filling-container">
+                <img class="filling-img" src="filling.png" alt="Начинка для піци">
+                <div class="filling-copy">
+                    <h2 class="filling-title">Тобі знадобляться такі інгредієнти для начинки:</h2>
+                    <ul class="filling-list">
+                        <li class="filling-item">Сир</li>
+                        <li class="filling-item">Томатний соус</li>
+                        <li class="filling-item">Шинка</li>
+                        <li class="filling-item">Гриби</li>
+                        <li class="filling-item">Оливки</li>
+                    </ul>
+                    <p class="filling-text">Змішай начинку, виклади на тісто та запікай до ідеального розплавлення сиру. Твоя піца буде соковитою, ароматною та неперевершеною.</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <footer class="footer">
+            <div class="container footer-container">
+                <p class="footer-text">робимо з любов'ю →</p>
+            </div>
+        </footer>
+    </main>
+    <p> As you read this, you're already tasting the deliciousness of our homemade pizza!
+        So take a time and read the pizza history:
+    </p>
+     <p>Pizza[a] is an Italian dish typically consisting of a flat base of leavened wheat-based dough topped with tomato, cheese, and other ingredients, baked at a high temperature, traditionally in a wood-fired oven.
+
+The term pizza was first recorded in AD 997, in a Latin manuscript from the southern Italian town of Gaeta, in Lazio, on the border with Campania.[2] Raffaele Esposito is often credited with creating the modern version of pizza in Naples at the end of the 19th century.[3][4][5][6] In 2009, Neapolitan pizza[7] was registered with the European Union as a traditional speciality guaranteed (TSG) dish. In 2017, the art of making Neapolitan pizza was included on UNESCO's list of intangible cultural heritage.[8]
+
+Pizza and its variants are among the most popular foods in the world. Pizza is sold at a variety of restaurants, including pizzerias, Mediterranean restaurants, via delivery, and as street food.[9] In Italy, pizza served in a restaurant is presented unsliced, and is eaten with the use of a knife and fork.[10][11] In casual settings, however, it is typically cut into slices to be eaten while held in the hand. Pizza is also sold in grocery stores in a variety of forms, including frozen or as kits for self-assembly. Store-bought pizzas are then cooked using a home oven.
+
+In 2017, the world pizza market was US$128 billion; in the US, it was $44 billion spread over 76,000 pizzerias.[12] Overall, 13% of the US population aged two years and over consumed pizza on any given day.[13]
+     </p>
+    <script>
+        (function(){
+            function checkBottom(){
+                var scrollTop = window.scrollY || document.documentElement.scrollTop;
+                var winH = window.innerHeight || document.documentElement.clientHeight;
+                var docH = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+                if (scrollTop + winH >= docH - 10) document.body.classList.add('at-bottom'); else document.body.classList.remove('at-bottom');
+            }
+            window.addEventListener('scroll', checkBottom, {passive:true});
+            window.addEventListener('resize', checkBottom);
+            document.addEventListener('DOMContentLoaded', checkBottom);
+        })();
+    </script>
+</body>
+</html>
